@@ -79,7 +79,6 @@ def filterUrlTuples(urlTuples, os, version):
 
     macs, win64s, win32s = splitByOS(urlTuples)
     if os is not None:
-        print os
         os = osmap[os.lower()]
         if os == 'Mac':
             win64s, win32s = [], []
